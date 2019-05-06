@@ -2,7 +2,9 @@ html {
     background: #b3b3b3;
     padding: 15px;
     border: 5px solid white;
+    margin: 15px;
     height: 2000px;
+    overflow: auto;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     padding: 20px;
     border: 5px solid black;
     margin: 0;
+    overflow: hidden;
   }
   
 .parent {
@@ -17,6 +20,8 @@ body {
     padding: 20px;
     border: 5px solid black;
     margin: 0;
+    top:100px;
+    position: relative;
   }
   
 .parent div {
@@ -25,13 +30,4 @@ body {
     padding: 10px;
     border: 5px solid black;
     margin: 10px;
-}
-
-.parent .child-1 {
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  margin: 0;
-  box-sizing: border-box;
 }
